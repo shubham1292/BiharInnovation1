@@ -1,0 +1,2 @@
+com/example/biharinnovation1/BuildConfig.java
+ com.example.biharinnovation1.BuildConfig

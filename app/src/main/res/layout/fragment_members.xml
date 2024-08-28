@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MembersFragment"
+    android:background="#fff">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="320dp"
+            android:layout_height="370dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/imgone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="6dp"
+                    android:textAlignment="center"
+                    android:text="Dr. Bikas Ranjan\n
+ Research scientist in Photonics and material engineering, currently working in Japan. He completed his doctorate in nanophotonics and plasmonics from Osaka University, Japan, and masters degree in photonics from CUSAT, India. His research includes optical sensing, new material process, thin-film coating and nanofabrication. " />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="15dp"
+            android:background="#061f5c"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/amit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/amit"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button1"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgtwo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Dr. Amit Shukla\n
+He is an Artificial intelligence (AI) research scientist, currently working in Singapore . He completed his doctorate in Spintronics from Osaka University, Japan, and M.Tech in microelectronics from IITB, India. " />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="15dp"
+            android:background="#061f5c"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/nitesh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amit"
+            android:onClick="openAmit"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nitesh"
+            android:layout_width="320dp"
+            android:layout_height="330dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgthree" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="Er. Nitesh Kumar\n
+ Holds a B.Tech degree in Electrical and Electronics. He is passionate about technology and robotics. He has worked in many companies and has designed many products for DRDO and other industries.His total experience in design field is 7+ years.
+"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nitesh"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openNitesh"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/abhishek"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgfour" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Er. Abhishek Kumar\nHe is a B.Tech degree in Electronics  and Communication Engineering. 4 years experienced in startup field.
+Founder:- Janta Group Started entrepreneurship carrier at the age of 18."/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abhishek"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openAbhishek"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/aditya"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgfive" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Er. Aditya Narayan\nHe did his Bachelors in Computer Science Enginneering. He works on developing websites and Android and has been exploring the field of artificial intelligence and machine learning with promising projects."/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aditya"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openAditya"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/amitM"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgsix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Mr. Amit Maurya\nHe is a young drone expert with interest in using drone technology for commercial drone solution. He is currently working on investigating potential of LPWAN and IoT for drone technology. "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amitM"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openAmitM"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/krishna"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button6"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgseven" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Mr. Krishna Kumar\nGraduated from Kolkata and have working experience in various organizations in India and abroad. He is passionate about technology and always strive to look for ways to Innovate and believe in early technology adoption. His working motive is goal oriented planning and execution. "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/krishna"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openKrishna"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mohit"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgeight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Mr. Mohit Raj\nPursuing bachelor degree in Computer science. Presently working in the area of LPWAN, IoT and AI. "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mohit"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openMohit"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/natasha"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button8"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgnine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Natasha Kumari\nExperienced International sales and marketing coordinator with a demonstrated history of working in the equipment manufacturing industry for Automobiles, Pharmaceutical and Electronics industry. Skilled in Sales, Product Promotion and Management."/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/natasha"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openNatasha"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kamini"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgten" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Kamini Kumari\nShe is pursuing bachelor degree in economics. Working on 3D CAD design and business development. "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kamini"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openKamini"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rabindra"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button10"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/imgeleven" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Rabindra Kumar\nHe did MBA Marketing.More than 20 years  experience of sales and marketing."/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rabindra"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openRabindra"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/atul"
+            android:layout_width="320dp"
+            android:layout_height="325dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button11"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/imgtwelve" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="Mr. Atul Kumar\nHe is a Multipreneur based in San Jose California (Silicon Valley). He is a 2001 MBA from IIM Ahmedabad and a serial failed entrepreneur, investor, and runs a Startup connector /accelerator and also Co-founder of few non-profits"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atul"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#061f5c"
+            android:onClick="openAtul"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dewang"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button12"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/imgthirteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Mr. Dewang Shekhar\nHe is persuing B.tech in Electronics and Communication ,Presently working in the area of LPWAN, IoT and AI. "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#061f5c"
+            android:onClick="openDewang"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.431"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dewang"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shubham"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button13"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardBackgroundColor="#486889"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/imgfourteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/actor"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Mr. Shubham Kumar\nPursuing bachelor degree in Computer science. Presently working in the area of LPWAN, IoT and AI. "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="70dp"
+            android:background="#061f5c"
+            android:onClick="openShubham"
+            android:text="LinkedIn Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shubham"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

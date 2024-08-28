@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BiharInnovation1</string>
+    <string name="home">Home</string>
+    <string name="products">Products</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="members">Members</string>
+    <string name="services">Services</string>
+    <string name="about_us">About Us</string>
+    <string name="log_in_member_s_only">Log In(Member\'s Only)</string>
+    <string name="bihar_innovation">Bihar Innovation</string>
+    <string name="act_today_for_tomorrow">Act Today For Tomorrow</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="address">
+        <br>Ara Garden Road, Jagdeo Path, opp. Pillar no-4 \n</br>
+        <br>Patna,</br>
+        <br> Bihar 800014\n</br>
+        <br>\n</br>
+        <br>Contact no: +916127966092\n\n</br>
+        <br>Mail id: info@biharinnovation.com\n</br>
+        <br>\n</br>
+        <br><b>Visiting Hours\n </b></br>
+        <br>Open Mon-Sat</br> <br> 09:00 am – 05:00 pm\n</br></string>
+
+    <string name="about" translatable="false"><p>This centre is established with the vision to provide a working
+        space and pleasant environment for students, researchers,
+        and scientists to work on fresh ideas and solve persistent societal challenges through innovations.
+        Our goal is to provide a physical space and facilities to those researchers who strive for excellence.</p>
+        <p>We want to break the barrier called <b>“Lack of Facility and Opportunity”
+        </b>and want to connect with those who despite having excellent ideas and capability but miss out chance for executing their skills and showcasing at world level.</p>
+        <p>We believe that success can only be achieved by identifying the right opportunity at the right time and striving for it with passionate persistency.
+            We put our effort mainly on harnessing know-how in technology sector and assist in finding solutions.
+            We have a dedicated team of researchers with experience who works in searching and bringing out the best opportunities across the globe and
+            ensuring it its responsibility to make it as simple and easy to access thereby connecting opportunity seekers and opportunity providers before deadline.</p>
+    </string>
+    <string name="r_d_solutions"><![CDATA[R&D Solutions]]></string>
+</resources>
